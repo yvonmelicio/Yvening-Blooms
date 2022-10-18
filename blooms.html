@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display"
+    />
+
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+
+    <style>
+      body {
+        font-family: "Playfair Display", serif;
+        background-color: #fff7f5;
+      }
+      .header {
+        position: relative;
+        text-align: center;
+        color: white;
+      }
+      .centered {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+      .cntnr {
+        width: 100%;
+        height: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+      }
+      .blooms {
+        position: relative;
+        text-align: center;
+        justify-content: space-around;
+      }
+      .btn-primary {
+        background-color: rgba(73, 81, 110, 0.9);
+        opacity: 1;
+        border: none;
+        color: white;
+        padding: 12px 20px;
+        text-align: center;
+        font-size: 16px;
+        margin: 4px 2px;
+        transition: 0.3s;
+      }
+      .btn-primary:hover {
+        opacity: 0.9;
+        color: #d5daeb;
+      }
+      .btn-primary:active {
+        opacity: 0.9;
+        color: white;
+      }
+      .modal-body {
+        text-align: center;
+      }
+    </style>
+
+    <title>Blooms</title>
+  </head>
+  <body>
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="./index.html">
+          <img
+            src="./pics/yblogo.png"
+            alt="YB"
+            class="rounded-circle"
+            width="40"
+            height="40"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link active" aria-current="page" href="./index.html"
+              ><h5>Home</h5></a
+            >
+            <a class="nav-link" href="./blooms.html"><h5>Blooms</h5></a>
+            <a class="nav-link" href="./shop.html"><h5>Shop</h5></a>
+            <a class="nav-link" href="./contact.html"><h5>Contact Us</h5></a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="header">
+      <div>
+        <img src="./pics/parts2.png" alt="Bloom" class="img-fluid" />
+        <div class="centered">
+          <h1
+            class="fw-bolder; display-1"
+            style="font-size: 1000%; text-shadow: 2px 2px 5px black"
+          >
+            BLOOMS
+          </h1>
+        </div>
+      </div>
+    </div>
+
+    <br /><br />
+    <div class="blooms">
+      <div class="container-fluid px-4 text-center cntnr">
+        <div class="row gx-5">
+          <div class="col">
+            <div class="card p-3" style="width: 20rem">
+              <img
+                src="./pics/angelstrumpet.png"
+                class="card-img-top"
+                alt="angelstrumpet"
+              />
+              <div class="card-body">
+                <h5 class="card-title fw-bold">Angel’s Trumpets (Brugmansia)</h5>
+                <br />
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#angel">About</button>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card p-3" style="width: 20rem">
+              <img
+                src="./pics/damesrocket.png"
+                class="card-img-top"
+                alt="damesrocket"
+              />
+              <div class="card-body">
+                <h5 class="card-title fw-bold">Dame’s Rocket (Hesperis Matronalis)</h5>
+                <br />
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#dame">About</button>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card p-3" style="width: 20rem">
+              <img
+                src="./pics/eveningprimrose.png"
+                class="card-img-top"
+                alt="eveningprimrose"
+              />
+              <div class="card-body">
+                <h5 class="card-title fw-bold">Evening Primrose (Oenothera biennis)</h5>
+                <br />
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#evening">About</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br />
+      <hr />
+      <br />
+      <div class="container-fluid px-4 text-center cntnr">
+        <div class="row gx-5">
+          <div class="col">
+            <div class="card p-3" style="width: 20rem">
+              <img
+                src="./pics/floweringtobacco.png"
+                class="card-img-top"
+                alt="floweringtobacco"
+              />
+              <div class="card-body">
+                <h5 class="card-title fw-bold">Flowering Tobacco (Nicotiana persica)</h5>
+                <br />
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#tobacco">About</button>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card p-3" style="width: 20rem">
+              <img
+                src="./pics/fouroclocks.png"
+                class="card-img-top"
+                alt="fouroclocks"
+              />
+              <div class="card-body">
+                <h5 class="card-title fw-bold">Four O’Clocks (Mirabilis jalapa)</h5>
+                <br />
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#four">About</button>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card p-3" style="width: 20rem">
+              <img
+                src="./pics/impatiens.png"
+                class="card-img-top"
+                alt="impatiens"
+              />
+              <div class="card-body">
+                <h5 class="card-title fw-bold">Impatiens (Impatiens walleriana)</h5>
+                <br />
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#impatiens">About</button>
+              </div>
+            </div>
+          </div>
+      </div>
+      <br />
+      <hr />
+      <br />
+      <div class="container-fluid px-4 text-center cntnr">
+        <div class="row gx-5">
+          <div class="col">
+            <div class="card p-3" style="width: 20rem">
+              <img
+                src="./pics/moonflower.png"
+                class="card-img-top"
+                alt="moonflower"
+              />
+              <div class="card-body">
+                <h5 class="card-title fw-bold">Moonflower (Ipomea alba)</h5>
+                <br /><br>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#moon">About</button>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card p-3" style="width: 20rem">
+              <img
+                src="./pics/nightphlox.png"
+                class="card-img-top"
+                alt="nightphlox"
+              />
+              <div class="card-body">
+                <h5 class="card-title fw-bold">Night Phlox (Zaluzianskya ovata))</h5>
+                <br />
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#phlox">About</button>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card p-3" style="width: 20rem">
+              <img
+                src="./pics/nightbloomingjasmine.png"
+                class="card-img-top"
+                alt="nightbloomingjasmine"
+              />
+              <div class="card-body">
+                <h5 class="card-title fw-bold">Night-Blooming Jasmine (Cestrum Nocturnum)</h5>
+                <br />
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#jasmine">About</button>
+              </div>
+            </div>
+          </div>
+      </div>
+      <br />
+      <hr />
+      <br />
+      <div class="container-fluid px-4 text-center cntnr">
+        <div class="row gx-5">
+          <div class="col">
+            <div class="card p-3" style="width: 20rem">
+              <img
+                src="./pics/orientallily.png"
+                class="card-img-top"
+                alt="orientallily"
+              />
+              <div class="card-body">
+                <h5 class="card-title fw-bold">Oriental Lily (Lilium ‘Casa Blanca’)</h5>
+                <br />
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#oriental">About</button>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card p-3" style="width: 20rem">
+              <img
+                src="./pics/queenofthenight.png"
+                class="card-img-top"
+                alt="queenofthenight"
+              />
+              <div class="card-body">
+                <h5 class="card-title fw-bold">Queen of the Night (Epiphyllum oxypetalum)</h5>
+                <br />
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#queen">About</button>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card p-3" style="width: 20rem">
+              <img
+                src="./pics/rainlily.png"
+                class="card-img-top"
+                alt="rainlily"
+              />
+              <div class="card-body">
+                <h5 class="card-title fw-bold">Rain Lily (Zephyranthes)</h5>
+                <br /><br>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#rain">About</button>
+              </div>
+            </div>
+          </div>
+      </div>
+      <br />
+      <hr />
+      <br />
+      <div class="container-fluid px-4 text-center cntnr">
+        <div class="row gx-5">
+          <div class="col">
+            <div class="card p-3" style="width: 20rem">
+              <img
+                src="./pics/tuberose.png"
+                class="card-img-top"
+                alt="tuberose"
+              />
+              <div class="card-body">
+                <h5 class="card-title fw-bold">Tuberose (Polianthes tuberosa)</h5>
+                <br />
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#rose">About</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="modal fade" id="angel" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-scrollable modal-xl">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5 fw-bold" id="exampleModalLabel">Angel’s Trumpets (Brugmansia)</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="container text-center">
+              <div class="row">
+                <div class="col">
+                  <img src="./pics/at.jpg" alt="angelstrumpet" class="float-start rounded img-fluid">
+                </div>
+                <div class="col">
+                  <h3 class="text-start" style="text-align: justify; line-height: 1.5;">The Brugmansia, commonly known as the angel trumpet, is a stunning perennial with vivacious blooms that pay homage to its name. Coming in a myriad of colors, the angel trumpet instantly adds a tropical feel to any garden or patio space. Though showy and vibrant, it's important to remember that these blooms are part of the nightshade family, which is known to be poisonous.
+                  </h3>
+                  <br><br>
+                  <h4 class="text-start" style="text-align: justify; line-height: 1.5; font-weight: bold;">Meaning/Symbolism:</h4>
+                  <h5 class="text-start" style="text-align: justify; line-height: 1.5;">Because of their size and unusual shape, the angel's trumpet represents vivacity and vibrancy.</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="dame" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-scrollable modal-xl">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5 fw-bold" id="exampleModalLabel">Dame’s Rocket (Hesperis Matronalis)</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="container text-center">
+              <div class="row">
+                <div class="col">
+                  <img src="./pics/dr.jpg" alt="damesrocket" class="float-start rounded img-fluid">
+                </div>
+                <div class="col">
+                  <h3 class="text-start" style="text-align: justify; line-height: 1.5;">Worth growing for its delicious ­­­­­­fra­grance­ alone, dame’s rocket also offers showy, long-lasting flowers and is as trouble-free an herb as you could ask for. Its multitude of common names attests to centuries of cultivation in gardens and to the high regard in which it has been held. Dame’s or sweet rocket, dame’s or damask violet, rogue’s or queen’s gilliflower, vesper flower, mother-of-the-evening: many of the names allude to its sweet scent–likened to a mixture of clove and violet–and to the time of day when that scent is released into the air.
+                  </h3>
+                  <br><br>
+                  <h4 class="text-start" style="text-align: justify; line-height: 1.5; font-weight: bold;">Meaning/Symbolism:</h4>
+                  <h5 class="text-start" style="text-align: justify; line-height: 1.5;"> In the Victorian “language of flowers”, dame’s rocket symbolized deceit because it is fragrant in the evening but scentless–or nearly so–during the day.</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="evening" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-scrollable modal-xl">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5 fw-bold" id="exampleModalLabel">Evening Primrose (Oenothera biennis)</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="container text-center">
+              <div class="row">
+                <div class="col">
+                  <img src="./pics/ep.jpg" alt="eveningprimrose" class="float-start rounded img-fluid">
+                </div>
+                <div class="col">
+                  <h3 class="text-start" style="text-align: justify; line-height: 1.5;">The evening primrose, or Oenothera biennis, is a wildflower that thrives in almost any condition. The flower is native to North America and as the name implies, it blooms at night. The evening primrose is also believed to have medicinal benefits that include treating baldness and providing pain relief. The entire plant is edible and non-toxic to both humans and animals.
+                  </h3>
+                  <br><br>
+                  <h4 class="text-start" style="text-align: justify; line-height: 1.5; font-weight: bold;">Meaning/Symbolism:</h4>
+                  <h5 class="text-start" style="text-align: justify; line-height: 1.5;">Primrose flowers are often seen as representations of youth and everlasting existence. These lovely flowers can stand for neglected merit, inconstancy, and even bashfulness, but usually, they are given to show someone that you can’t live without them.</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="tobacco" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-scrollable modal-xl">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5 fw-bold" id="exampleModalLabel">Flowering Tobacco (Nicotiana persica)</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="container text-center">
+              <div class="row">
+                <div class="col">
+                  <img src="./pics/ft.jpg" alt="floweringtobacco" class="float-start rounded img-fluid">
+                </div>
+                <div class="col">
+                  <h3 class="text-start" style="text-align: justify; line-height: 1.5;">Flowering tobacco is a beautiful ornamental plant native to southern Brazil, northern Argentina, Paraguay, Uruguay, and Colombia, that can add color and fragrance to the garden. It features fuzzy, sticky foliage and flower stalks decorated with clusters of blooms. Appearing in the summer and early fall, the flowers of most varieties open in the evening hours or at night and fill the air with their potent sweet aroma, attracting nighttime pollinators such as moths.
+                  </h3>
+                  <br><br>
+                  <h4 class="text-start" style="text-align: justify; line-height: 1.5; font-weight: bold;">Meaning/Symbolism:</h4>
+                  <h5 class="text-start" style="text-align: justify; line-height: 1.5;">To dream of tobacco means that one will have success in business and failure in love. To see it growing indicates a pleasant surprise. To see the dried leaf in a dream indicates a good crop or coming prosperity. To smoke it tells of good friendships.</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="four" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-scrollable modal-xl">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5 fw-bold" id="exampleModalLabel">Four O’Clocks (Mirabilis jalapa)</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="container text-center">
+              <div class="row">
+                <div class="col">
+                  <img src="./pics/4oc.jpg" alt="fouroclocks" class="float-start rounded img-fluid">
+                </div>
+                <div class="col">
+                  <h3 class="text-start" style="text-align: justify; line-height: 1.5;">Four o'clock plants (Mirabilis jalapa) are bushy blooming perennials. These tuberous-rooted plants produce slightly pointed oval leaves on branching stems. They get their common name because of the way they bloom. The flowers open in the late afternoon, typically around 4 p.m. or so, and then remain open until the next morning. The approximately 2-inch-long blooms are trumpet-shaped with five petals, and they come in several colors, often shades of pink and red. Some four o’clock plants produce flowers in multiple colors, sometimes with marbling or other markings.
+                  </h3>
+                  <br><br>
+                  <h4 class="text-start" style="text-align: justify; line-height: 1.5; font-weight: bold;">Meaning/Symbolism:</h4>
+                  <h5 class="text-start" style="text-align: justify; line-height: 1.5;">Many flowers symbolize many different things, and for the four o'clock flower, this meaning can be interpreted many ways. This beautiful flower blooms during the night in silence, and to many people it signifies hope for a new day.</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="impatiens" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-scrollable modal-xl">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5 fw-bold" id="exampleModalLabel">Impatiens (Impatiens walleriana)</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="container text-center">
+              <div class="row">
+                <div class="col">
+                  <img src="./pics/imp.jpg" alt="impatiens" class="float-start rounded img-fluid">
+                </div>
+                <div class="col">
+                  <h3 class="text-start" style="text-align: justify; line-height: 1.5;">The ornamental species of impatiens known for their brightly colored flowers are native to the tropics of Africa and Asia. They are commonly known as Touch-Me-Nots because their seed pods are very sensitive and just a light touch will cause them to burst open.
+                  </h3>
+                  <br><br>
+                  <h4 class="text-start" style="text-align: justify; line-height: 1.5; font-weight: bold;">Meaning/Symbolism:</h4>
+                  <h5 class="text-start" style="text-align: justify; line-height: 1.5;">Impatiens carry a symbolic meaning of motherly love. However, in some cultures, much as the name suggests, Impatiens do represent impatience.</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="moon" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-scrollable modal-xl">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5 fw-bold" id="exampleModalLabel">Moonflower (Ipomea alba)</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="container text-center">
+              <div class="row">
+                <div class="col">
+                  <img src="./pics/mf.jpg" alt="moonflower" class="float-start rounded img-fluid">
+                </div>
+                <div class="col">
+                  <h3 class="text-start" style="text-align: justify; line-height: 1.5;">Moonflower is one of the most romantic plants you can grow in a garden. The large, trumpet-shape flowers unfurl in the evening and stay open until the sun rises. Several varieties of moonflower also give off a lemon fragrance when its flowers are open.
+                  </h3>
+                  <br><br>
+                  <h4 class="text-start" style="text-align: justify; line-height: 1.5; font-weight: bold;">Meaning/Symbolism:</h4>
+                  <h5 class="text-start" style="text-align: justify; line-height: 1.5;">The moonflower meaning and its symbols revolve around the fact that it is a night flower. It represents the beauty that comes out of darkness. The flower also stands for dreaming of love. This trumpet-shaped flower calls out to anyone who feels low. It uplifts the soul with its pleasant smell and by just shining bright against the night sky. These flowers look like a ray of hope amidst dark and distressing times and bring joy to everyone around.</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="phlox" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-scrollable modal-xl">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5 fw-bold" id="exampleModalLabel">Night Phlox (Zaluzianskya ovata)</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="container text-center">
+              <div class="row">
+                <div class="col">
+                  <img src="./pics/np.jpg" alt="nightphlox" class="float-start rounded img-fluid">
+                </div>
+                <div class="col">
+                  <h3 class="text-start" style="text-align: justify; line-height: 1.5;">Night phlox, Zaluzianskya ovata is a low-growing, alpine perennial, native to southern Africa. It’s highly prized for the numerous small white blooms, which open at night and release a beautiful, sweet perfume.
+                  </h3>
+                  <br><br>
+                  <h4 class="text-start" style="text-align: justify; line-height: 1.5; font-weight: bold;">Meaning/Symbolism:</h4>
+                  <h5 class="text-start" style="text-align: justify; line-height: 1.5;">The symbolic meanings of the phlox flower can be summarized as: united hearts, united souls, unanimity, harmony, partnership, compatibility, and sweet dreams. The unity and unanimity symbolism was derived from the close grouping (clusters) in the flower head. Possible magical powers of the phlox flower included friendship spells and relationship spells.</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="jasmine" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-scrollable modal-xl">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5 fw-bold" id="exampleModalLabel">Night-Blooming Jasmine (Cestrum Nocturnum)</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="container text-center">
+              <div class="row">
+                <div class="col">
+                  <img src="./pics/nj.jpg" alt="nightbloomingjasmine" class="float-start rounded img-fluid">
+                  <img src="./pics/nj2.jpg" alt="nightbloomingjasmine" class="float-start rounded img-fluid">
+                </div>
+                <div class="col">
+                  <h3 class="text-start" style="text-align: justify; line-height: 1.5;">Night-blooming jasmine (Cestrum nocturnum) is a fast-growing woody shrub. Part of the Solanaceae family, which also includes potatoes and tomatoes, the plant isn't a true jasmine. It gets its name from the tubular greenish-white or yellow flowers that emit a highly fragrant scent at night and are attractive to butterflies and other pollinators. The shrub has a long bloom period, repeatedly flowering through the summer.
+                  </h3>
+                  <br><br>
+                  <h4 class="text-start" style="text-align: justify; line-height: 1.5; font-weight: bold;">Meaning/Symbolism:</h4>
+                  <h5 class="text-start" style="text-align: justify; line-height: 1.5;">Jasmine flower meanings and symbolism include love, purity, feminine powers, sensuality, modesty, hospitality, community, inspiration, and spiritual ascension.</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="oriental" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-scrollable modal-xl">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5 fw-bold" id="exampleModalLabel">Oriental Lily (Lilium ‘Casa Blanca’)</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="container text-center">
+              <div class="row">
+                <div class="col">
+                  <img src="./pics/ol.jpg" alt="orientallily" class="float-start rounded img-fluid">
+                </div>
+                <div class="col">
+                  <h3 class="text-start" style="text-align: justify; line-height: 1.5;">The Casablanca flower, also known as Lilium Casa Blanca or the Oriental Lily Casa Blanca, is a perennial bulb belonging to the Lilium family. Casablanca Oriental lilies belong to the lily family and were developed as a hybrid variety of oriental lilies. These unmistakably gorgeous white lilies are specifically bred for their beauty.
+                  </h3>
+                  <br><br>
+                  <h4 class="text-start" style="text-align: justify; line-height: 1.5; font-weight: bold;">Meaning/Symbolism:</h4>
+                  <h5 class="text-start" style="text-align: justify; line-height: 1.5;">The Casablanca flower meaning is very unique. In general, the pure white Casablanca flower meaning symbolizes celebrations. This is the singular and unique meaning of the oriental Casablanca lily. These flowers are used to celebrate all kinds of events and occasions. They are used to celebrate, love, affection, marriages, births, and even deaths. They are a mainstay in most special occasions that celebrate the joy of living.</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="queen" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-scrollable modal-xl">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5 fw-bold" id="exampleModalLabel">Queen of the Night (Epiphyllum oxypetalum)</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="container text-center">
+              <div class="row">
+                <div class="col">
+                  <img src="./pics/queen.jpg" alt="queenofthenight" class="float-start rounded img-fluid">
+                </div>
+                <div class="col">
+                  <h3 class="text-start" style="text-align: justify; line-height: 1.5;">The Queen of the Night is a dramatic night-blooming cactus. It blooms once a year, only overnight. This is a very extraordinary performance, as expected from plants that consume all reproductive energy in a short amount of time. The flowers are large and fragrant, shining white like a full moon.
+                  </h3>
+                  <br><br>
+                  <h4 class="text-start" style="text-align: justify; line-height: 1.5; font-weight: bold;">Meaning/Symbolism:</h4>
+                  <h5 class="text-start" style="text-align: justify; line-height: 1.5;">The queen of the night flower symbolism is associated with luck in many countries around the world. This flower brings luck and fulfils the desires of the heart. People offer the flower of epiphyllum to deities showing their devotion. The queen of the night flower meaning is a symbol of the value of perseverance. This auspicious flower embodies hearty admiration. The queen of the night flower meaning represents how eternity lies in small moments. This furthermore implies the ephemeral nature of good time in life. People gift these plants to individuals who are a reason for their happiness.</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="rain" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-scrollable modal-xl">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5 fw-bold" id="exampleModalLabel">Rain Lily (Zephyranthes)</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="container text-center">
+              <div class="row">
+                <div class="col">
+                  <img src="./pics/rl.jpg" alt="rainlily" class="float-start rounded img-fluid">
+                </div>
+                <div class="col">
+                  <h3 class="text-start" style="text-align: justify; line-height: 1.5;">Rain lily, also called the Zephyranthes Rosea is a tropical flower. Also considered a wildflower, it is called so because it blooms after a long, hard rainfall. These perennials belong to the Amaryllidaceae family. Native to the southeastern part of the US, these are found in Central and South America. In Greek, zephyrus is the name of the God of the West Wind and anthos means flower. It is also called a Fairy Lily for its seeming ability to appear out of nowhere.
+                  </h3>
+                  <br><br>
+                  <h4 class="text-start" style="text-align: justify; line-height: 1.5; font-weight: bold;">Meaning/Symbolism:</h4>
+                  <h5 class="text-start" style="text-align: justify; line-height: 1.5;">The Rain Lily flower symbolizes new beginnings, hope, joy, happiness, marriage, prosperity, and rebirth.</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="rose" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-scrollable modal-xl">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5 fw-bold" id="exampleModalLabel">Tuberose (Polianthes tuberosa)</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="container text-center">
+              <div class="row">
+                <div class="col">
+                  <img src="./pics/tr.jpg" alt="tuberose" class="float-start rounded img-fluid">
+                </div>
+                <div class="col">
+                  <h3 class="text-start" style="text-align: justify; line-height: 1.5;">Tuberose is a popular cut flower in different parts of the world, including United States of America, china, France, and India. The blooms usually open during nighttime, giving that delicious fragrance and wonderful color of white. In fact, it is recognized to have a covetable scent incomparable all throughout the world.
+                  </h3>
+                  <br><br>
+                  <h4 class="text-start" style="text-align: justify; line-height: 1.5; font-weight: bold;">Meaning/Symbolism:</h4>
+                  <h5 class="text-start" style="text-align: justify; line-height: 1.5;">Tuberose is a flower symbolic of wild pleasures or primordial passion. This is because of its seductive fragrance. In addition, this flower is also given to refer to a passionate affair or love for adventure. For the Victorians, this flower was a symbol of voluptuousness and love. Ideally useful for bouquets, especially for weddings, the sophisticated bloom and distinct scent of this flower create such an impressive and one-of-a-kind design.</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <br /><br /><br /><br />
+
+    <div class="container-fluid">
+      <footer
+        class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top"
+      >
+        <div class="col-md-4 d-flex align-items-center">
+          <a
+            href="./index.html"
+            class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1"
+          >
+            <img
+              src="./pics/yveningblooms.png"
+              alt="YB"
+              class="rounded-circle"
+              width="40"
+              height="40"
+            />
+          </a>
+          <span class="mb-3 mb-md-0 text-muted">© Yvening Blooms</span>
+        </div>
+
+        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+          <li class="ms-3">
+            <a class="text-muted" href="https://www.facebook.com/"
+              ><i class="bi bi-facebook"></i
+            ></a>
+          </li>
+          <li class="ms-3">
+            <a class="text-muted" href="https://twitter.com/home?lang=en"
+              ><i class="bi bi-twitter"></i
+            ></a>
+          </li>
+          <li class="ms-3">
+            <a class="text-muted" href="https://www.instagram.com/"
+              ><i class="bi bi-instagram"></i
+            ></a>
+          </li>
+        </ul>
+      </footer>
+    </div>
+
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

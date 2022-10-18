@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display"
+    />
+
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+
+    <style>
+      body {
+        font-family: "Playfair Display", serif;
+      }
+      .header {
+        position: relative;
+        text-align: center;
+        color: white;
+      }
+      .centered {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+      .btn1 {
+        background-color: rgba(73, 81, 110, 0.9);
+        opacity: 1;
+        border: none;
+        color: white;
+        padding: 24px 40px;
+        text-align: center;
+        font-size: 16px;
+        margin: 4px 2px;
+        transition: 0.3s;
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2),
+          0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      }
+      .btn1:hover {
+        opacity: 0.9;
+        color: #d5daeb;
+      }
+      .btn1:active {
+        opacity: 0.9;
+        color: white;
+      }
+      .info {
+        position: relative;
+        text-align: center;
+      }
+      .bouquet {
+        position: relative;
+        text-align: center;
+      }
+      #grad1 {
+        background-image: linear-gradient(
+          to right,
+          rgba(235, 192, 190, 0),
+          rgba(235, 192, 190, 1),
+          rgba(235, 192, 190, 0)
+        );
+      }
+      .bouquets {
+        position: absolute;
+        transform: translate(-50%, -50%);
+      }
+      .blooms {
+        position: relative;
+        text-align: center;
+      }
+      #grad2 {
+        background-image: linear-gradient(
+          to left,
+          rgba(249, 169, 137, 0),
+          rgba(249, 169, 137, 1)
+        );
+      }
+      .btn2 {
+        background-color: rgba(207, 108, 91, 0.9);
+        opacity: 1;
+        border: none;
+        color: white;
+        padding: 6px 22px;
+        text-align: center;
+        font-size: 16px;
+        margin: 4px 2px;
+        transition: 0.3s;
+      }
+      .btn2:hover {
+        opacity: 0.9;
+        color: #d5daeb;
+      }
+      .btn2:active {
+        opacity: 0.9;
+        color: white;
+      }
+      .shopp {
+        position: relative;
+        text-align: center;
+      }
+      #grad3 {
+        background-image: linear-gradient(
+          to right,
+          rgba(231, 155, 155, 0),
+          rgba(231, 155, 155, 1)
+        );
+      }
+      .kontak {
+        position: relative;
+        text-align: center;
+      }
+      .btn3 {
+        background-color: rgba(73, 81, 110, 0.9);
+        opacity: 1;
+        border: none;
+        color: white;
+        padding: 6px 22px;
+        text-align: center;
+        font-size: 16px;
+        margin: 4px 2px;
+        transition: 0.3s;
+      }
+      .btn3:hover {
+        opacity: 0.9;
+        color: #d5daeb;
+      }
+      .btn3:active {
+        opacity: 0.9;
+        color: white;
+      }
+    </style>
+
+    <title>Yvening Blooms</title>
+  </head>
+  <body>
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="./index.html">
+          <img
+            src="./pics/yblogo.png"
+            alt="YB"
+            class="rounded-circle"
+            width="40"
+            height="40"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link active" aria-current="page" href="./index.html"
+              ><h5>Home</h5></a
+            >
+            <a class="nav-link" href="./blooms.html"><h5>Blooms</h5></a>
+            <a class="nav-link" href="./shop.html"><h5>Shop</h5></a>
+            <a class="nav-link" href="./contact.html"><h5>Contact Us</h5></a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="header">
+      <div>
+        <img src="./pics/header1.png" alt="Bloom" class="img-fluid" />
+        <div class="centered">
+          <h1
+            class="fw-bolder; display-1"
+            style="font-size: 1000%; text-shadow: 2px 2px 5px black"
+          >
+            YVENING BLOOMS
+          </h1>
+          <br /><br />
+          <a href="./shop.html"
+            ><button class="btn btn1">
+              <h3>Shop Now</h3>
+            </button></a
+          >
+        </div>
+      </div>
+    </div>
+
+    <br /><br />
+    <h1 style="text-align: center">~~~~~~~~</h1>
+    <br /><br />
+
+    <div class="parts">
+      <div class="info">
+        <img src="./pics/parts1.gif" alt="desc" class="img-fluid" />
+        <div class="centered">
+          <h2 style="text-align: center">
+            Send beautiful and fragrant night blooming flowers to your loved
+            ones with Yvening Blooms.
+          </h2>
+        </div>
+      </div>
+      <br /><br />
+      <h1 style="text-align: center">ABOUT US</h1>
+      <br /><br />
+      <div class="bouquet" id="grad1">
+        <img
+          src="./pics/webb (1).png"
+          alt="ybshop"
+          class="float-start rounded"
+          width="312px"
+          height="312px"
+        />
+        <div class="text-start centered bouquets">
+          <h2
+            style="
+              line-height: 2.2;
+              word-spacing: 15px;
+              letter-spacing: 2px;
+              text-align: justify;
+            "
+          >
+            Yvening Blooms is a flower shop for night-blooming flowers that
+            provides affordable flower and arrangements for all occasions.
+          </h2>
+        </div>
+        <img
+          src="./pics/webb1.png"
+          alt="ybshop"
+          class="float-end rounded"
+          width="312px"
+          height="312px"
+        />
+        <br /><br /><br /><br /><br /><br /><br /><br />
+        <br /><br /><br /><br /><br />
+      </div>
+      <br /><br />
+      <h1 style="text-align: center">BLOOMS</h1>
+      <br /><br />
+      <div class="blooms" id="grad2">
+        <img
+          src="./pics/webb (3).png"
+          alt="blooms"
+          class="float-start rounded"
+          width="312px"
+          height="312px"
+        />
+        <div class="text-start centered">
+          <h2
+            style="
+              line-height: 2.2;
+              word-spacing: 15px;
+              letter-spacing: 2px;
+              text-align: justify;
+            "
+          >
+            Get to know our different night-blooming flowers and see which one
+            you'd love the most.
+          </h2>
+          <a href="./blooms.html"
+            ><button class="btn btn2">
+              <h5>Blooms >></h5>
+            </button></a
+          >
+        </div>
+        <br /><br /><br /><br /><br /><br /><br /><br />
+        <br /><br /><br /><br /><br />
+      </div>
+      <br /><br />
+      <h1 style="text-align: center">SHOP</h1>
+      <br /><br />
+      <div class="shopp" id="grad3">
+        <img
+          src="./pics/webb (2).png"
+          alt="shopp"
+          class="float-end rounded"
+          width="312px"
+          height="312px"
+        />
+        <div class="text-start centered">
+          <h2
+            style="
+              line-height: 2.2;
+              word-spacing: 15px;
+              letter-spacing: 2px;
+              text-align: justify;
+            "
+          >
+            Shop for flowers, bouquets and different arrangements.
+          </h2>
+          <a href="./shop.html"
+            ><button class="btn btn2">
+              <h5>Shop >></h5>
+            </button></a
+          >
+        </div>
+        <br /><br /><br /><br /><br /><br /><br /><br />
+        <br /><br /><br /><br /><br />
+      </div>
+      <br /><br />
+      <h1 style="text-align: center">CONTACT US</h1>
+      <br /><br />
+      <div class="kontak">
+        <img src="./pics/parts.png" alt="kontak" class="img-fluid" />
+        <div class="centered">
+          <h2
+            style="
+              line-height: 2.2;
+              word-spacing: 15px;
+              letter-spacing: 2px;
+              text-align: center;
+              color: white;
+              text-shadow: 2px 2px 5px black;
+            "
+          >
+            Any questions you might have about our blooms? Contact us here.
+          </h2>
+          <a href="./contact.html"
+            ><button class="btn btn3">
+              <h5>CONTACT US</h5>
+            </button></a
+          >
+        </div>
+      </div>
+    </div>
+
+    <br /><br />
+
+    <div class="container-fluid">
+      <footer
+        class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top"
+      >
+        <div class="col-md-4 d-flex align-items-center">
+          <a
+            href="./index.html"
+            class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1"
+          >
+            <img
+              src="./pics/yveningblooms.png"
+              alt="YB"
+              class="rounded-circle"
+              width="40"
+              height="40"
+            />
+          </a>
+          <span class="mb-3 mb-md-0 text-muted">© Yvening Blooms</span>
+        </div>
+
+        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+          <li class="ms-3">
+            <a class="text-muted" href="https://www.facebook.com/"
+              ><i class="bi bi-facebook"></i
+            ></a>
+          </li>
+          <li class="ms-3">
+            <a class="text-muted" href="https://twitter.com/home?lang=en"
+              ><i class="bi bi-twitter"></i
+            ></a>
+          </li>
+          <li class="ms-3">
+            <a class="text-muted" href="https://www.instagram.com/"
+              ><i class="bi bi-instagram"></i
+            ></a>
+          </li>
+        </ul>
+      </footer>
+    </div>
+
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
